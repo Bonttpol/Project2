@@ -3,15 +3,9 @@ using System.IO;
 using System.Threading;
 using System.Collections.Generic;
 using System.Windows.Forms;
-using Google.Apis.Drive.v2;
 using Google.Apis.Util.Store;
 using Google.Apis.Auth.OAuth2;
-using File = Google.Apis.Drive.v2.Data.File;
 using Google.Apis.Services;
-using Google.GData;
-using Google.GData.Spreadsheets;
-using Google.GData.Client;
-using Google.Apis.Sheets;
 using Google.Apis.Sheets.v4;
 using Google.Apis.Sheets.v4.Data;
 
@@ -230,9 +224,7 @@ namespace Курсовой2
             }
 
             if (Delet.Checked == true)
-            {
                 DeletRow();
-            }
         }
     }
 }
